@@ -123,7 +123,7 @@ returnValue GnuplotWindow::init()
 	}
 
 #ifndef __NO_PIPES__
-	gnuPipe = popen("gnuplot -persist -background white", "w");
+	gnuPipe = popen("gnuplot -persist", "w");
 
 	// TODO In principle, we should just print out a warning, plot is not going
 	// to generated anyways.
